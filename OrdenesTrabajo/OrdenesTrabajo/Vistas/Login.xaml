@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdenesTrabajo.Vistas.Login"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout BackgroundColor="#181920">
+        <StackLayout VerticalOptions="CenterAndExpand"
+                         Spacing="15">
+            <Label Text="Bienvenido!"
+                   FontAttributes="Bold"
+                   FontSize="25"
+                   TextColor="White"
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,0"/>
+            <Label Text="Por favor, inicia sesión con tu cuenta"
+                   FontAttributes="Bold"
+                   FontSize="15"
+                   TextColor="Gray"
+                   HorizontalOptions="Center"></Label>
+            <Frame HasShadow="True"
+                       CornerRadius="20"
+                   Margin="20,50,20,0"
+                   BackgroundColor="#242933">
+                    <Entry Keyboard="Default"
+                           Placeholder="Nombre de Usuario"
+                           PlaceholderColor="Gray"
+                           TextColor="white"
+                           FontSize="Medium"
+                           x:Name="txtUser" />
+                </Frame>
+                <Frame HasShadow="True"
+                       CornerRadius="20"
+                   Margin="20,0,20,0"
+                   BackgroundColor="#242933">
+                    <Entry Keyboard="Default"
+                       IsPassword="True"
+                       Placeholder="Contraseña"
+                       PlaceholderColor="Gray"
+                       TextColor="White"
+                       FontSize="Medium"
+                       x:Name="txtPassword" />
+                </Frame>
+                <Label Text="¿Olvidó su contraseña?"
+                       FontAttributes="Bold"
+                       FontSize="15"
+                   TextColor="Gray"
+                       HorizontalOptions="End"
+                       Margin="20,0,20,0"/>
+                <Button Text="Iniciar Sesión"
+                        TextTransform="None"
+                    Margin="20,60,20,0"
+                    BackgroundColor="#4F61EC"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        x:Name="btnLogin"
+                        Clicked="btnLogin_Clicked"
+                        ></Button>
+            <StackLayout Orientation="Horizontal" 
+                         HorizontalOptions="Center"
+                         Margin="20,20,20,0">
+                <Label Text="¿No tienes una cuenta?"
+                   FontAttributes="Bold"
+                   FontSize="15"
+                   TextColor="White"
+                   HorizontalOptions="End"
+                    />
+                <Label Text="Ingresar aquí"
+                       FontAttributes="Bold"
+                       FontSize="15"
+                       TextColor="#4F61EC"
+                       HorizontalOptions="End"
+                        />
+            </StackLayout>
+        </StackLayout>
+ 
+    </StackLayout>
+</ContentPage>

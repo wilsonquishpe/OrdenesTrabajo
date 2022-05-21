@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdenesTrabajo.Vistas.Clientes">
+    <ScrollView>
+        <Grid BackgroundColor="#181920">
+            <StackLayout Spacing="10"
+                         Margin="20">
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Tipo de Identificación"
+                               TextColor="White"/>
+                        <Picker x:Name="picker"
+                                Title="Seleccione uno"
+                                FontSize="Small"
+                                TextColor="White"
+                                TitleColor="White">
+                            <Picker.Items>
+                                <x:String>Cedula</x:String>
+                                <x:String>RUC</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Identificación"
+                               TextColor="White" />
+                        <Entry Keyboard="Numeric"
+                               Placeholder="Identificación"
+                               PlaceholderColor="Gray"
+                               TextColor="White"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Nombres"
+                               TextColor="White" />
+                        <Entry Keyboard="Default"
+                               Placeholder="nombres"
+                               PlaceholderColor="Gray"
+                               TextColor="white"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Nombres"
+                               TextColor="White" />
+                        <Entry Keyboard="Default"
+                               Placeholder="apellidos"
+                               PlaceholderColor="Gray"
+                               TextColor="white"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Nombres"
+                               TextColor="White" />
+                        <Entry Keyboard="Email"
+                               Placeholder="correo"
+                               PlaceholderColor="Gray"
+                               TextColor="white"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                    <Label Text="Nombres"
+                           TextColor="White" />
+                    <Entry Keyboard="Telephone"
+                           Placeholder="telefono"
+                           PlaceholderColor="Gray"
+                           TextColor="white"
+                               FontSize="Small" />
+                    </StackLayout>
+                </Frame>
+                <Button Text="Save"
+                        TextTransform="None"
+                        BackgroundColor="#4F61EC"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        x:Name="btnSave" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vistas="clr-namespace:OrdenesTrabajo.Vistas"
+             x:DataType="vistas:MenuTab"
+             x:Class="OrdenesTrabajo.Vistas.Ordenes">
+    <ScrollView>
+        <Grid BackgroundColor="#181920">
+            <StackLayout Spacing="10"
+                         Margin="20">
+                
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Cliente" TextColor="White"/>
+                        <Picker x:Name="pickerCliente"
+                                Title="Seleccione cliente"
+                                FontSize="Small"
+                                TextColor="white"
+                                TitleColor="Gray">
+                            <Picker.Items>
+                                <x:String>Cliente 1</x:String>
+                                <x:String>Cliente 2</x:String>
+                                <x:String>Cliente 3</x:String>
+                                <x:String>Cliente 4</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    
+                </Frame>
+                
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Equipo"
+                               TextColor="White" />
+                        <Picker x:Name="picker"
+                                Title="Seleccione equipo"
+                                FontSize="Small"
+                                TextColor="White"
+                                TitleColor="Gray">
+                            <Picker.Items>
+                                <x:String>Laptop</x:String>
+                                <x:String>CPU</x:String>
+                                <x:String>Monitor</x:String>
+                                <x:String>Impresora</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </StackLayout>
+                    
+                   
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Serial"
+                               TextColor="White" />
+                        <Entry Keyboard="Default"
+                               Placeholder="serie del equipo"
+                               PlaceholderColor="Gray"
+                               TextColor="White"
+                               FontSize="Small"
+                               ClearButtonVisibility="WhileEditing" />
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Marca"
+                               TextColor="White" />
+                        <Entry Keyboard="Default"
+                               Placeholder="marca del equipo"
+                               PlaceholderColor="Gray"
+                               TextColor="White"
+                               FontSize="Small" />
+                    </StackLayout>
+
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Marca"
+                               TextColor="White" />
+                        <Entry Keyboard="Default"
+                               Placeholder="modelo"
+                               PlaceholderColor="Gray"
+                               TextColor="White"
+                               FontSize="Small" />
+                    </StackLayout>
+              
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Descripción del problema"
+                               TextColor="White" />
+                        <Editor FontSize="Small"
+                                TextColor="White"
+                                PlaceholderColor="Gray"
+                                Placeholder="Descripción"
+                                Keyboard="Plain" VerticalOptions="Center"/>
+
+                    </StackLayout>
+
+                </Frame>
+                <Frame VerticalOptions="Center"
+                       CornerRadius="15"
+                       HasShadow="False">
+                    <Grid RowDefinitions="100,50" ColumnDefinitions="*,*,*">
+  
+                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
+                               Grid.Column="0" />
+                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
+                               Grid.Column="1" />
+                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
+                               Grid.Column="2" />
+                        <Image Source="camaraFotografica.png"
+                               Grid.Row="1"
+                               Grid.ColumnSpan="3" />
+                    </Grid>
+                </Frame>
+                <Button Text="Save"
+                        TextTransform="None"
+                        BackgroundColor="#4F61EC"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        x:Name="btnSave" />
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
