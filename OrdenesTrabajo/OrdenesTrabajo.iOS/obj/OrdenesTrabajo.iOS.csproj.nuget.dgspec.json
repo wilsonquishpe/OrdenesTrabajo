@@ -1,26 +1,22 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj": {}
+    "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj": {
+    "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
         "projectName": "OrdenesTrabajo.iOS",
-        "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
-        "packagesPath": "C:\\Users\\dguilcapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dguilcapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "xamarinios10"
@@ -32,8 +28,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
-                "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj"
+              "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
+                "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj"
               }
             }
           }
@@ -42,21 +38,25 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.2.0.564, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2-beta1, )"
             },
             "Xam.Plugin.Media": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.1.1-beta, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2401, )"
             }
           }
         }
@@ -73,22 +73,18 @@
         }
       }
     },
-    "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
+    "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
+        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
         "projectName": "OrdenesTrabajo",
-        "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
-        "packagesPath": "C:\\Users\\dguilcapi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\obj\\",
+        "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
+        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\dguilcapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -113,6 +109,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.2.0.564, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -121,19 +121,19 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2-beta1, )"
             },
             "Xam.Plugin.Media": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.1.1-beta, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.6.1, )"
+              "version": "[1.7.3, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[5.0.0.2012, )"
+              "version": "[5.0.0.2401, )"
             }
           },
           "imports": [
@@ -146,7 +146,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

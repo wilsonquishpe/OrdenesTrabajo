@@ -18,7 +18,7 @@
                    TextColor="Gray"
                    HorizontalOptions="Center"></Label>
             <Frame HasShadow="True"
-                       CornerRadius="20"
+                   CornerRadius="20"
                    Margin="20,50,20,0"
                    BackgroundColor="#242933">
                     <Entry Keyboard="Default"

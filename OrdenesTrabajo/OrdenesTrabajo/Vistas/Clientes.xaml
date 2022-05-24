@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OrdenesTrabajo.Vistas.Clientes">
+             x:Class="OrdenesTrabajo.Vistas.Clientes"
+             Title="Clientes">
     <ScrollView>
         <Grid BackgroundColor="#181920">
             <StackLayout Spacing="10"
@@ -12,15 +13,12 @@
                     <StackLayout>
                         <Label Text="Tipo de Identificación"
                                TextColor="White"/>
-                        <Picker x:Name="picker"
+                        <Picker x:Name="pickerIdentificacion"
                                 Title="Seleccione uno"
                                 FontSize="Small"
                                 TextColor="White"
-                                TitleColor="White">
-                            <Picker.Items>
-                                <x:String>Cedula</x:String>
-                                <x:String>RUC</x:String>
-                            </Picker.Items>
+                                TitleColor="White"
+                                ItemDisplayBinding="{Binding name}">
                         </Picker>
                     </StackLayout>
                 </Frame>
@@ -28,13 +26,14 @@
                        CornerRadius="15"
                        BackgroundColor="#242933">
                     <StackLayout>
-                        <Label Text="Identificación"
+                        <Label Text="Documento"
                                TextColor="White" />
                         <Entry Keyboard="Numeric"
-                               Placeholder="Identificación"
+                               Placeholder="Número de documento"
                                PlaceholderColor="Gray"
                                TextColor="White"
-                               FontSize="Small" />
+                               FontSize="Small"
+                               x:Name="txtDocumento"/>
                     </StackLayout>
                 </Frame>
                 <Frame HasShadow="False"
@@ -47,46 +46,64 @@
                                Placeholder="nombres"
                                PlaceholderColor="Gray"
                                TextColor="white"
-                               FontSize="Small" />
+                               FontSize="Small"
+                               x:Name="txtNombres"/>
                     </StackLayout>
                 </Frame>
                 <Frame HasShadow="False"
                        CornerRadius="15"
                        BackgroundColor="#242933">
                     <StackLayout>
-                        <Label Text="Nombres"
+                        <Label Text="Apellidos"
                                TextColor="White" />
                         <Entry Keyboard="Default"
                                Placeholder="apellidos"
                                PlaceholderColor="Gray"
                                TextColor="white"
-                               FontSize="Small" />
+                               FontSize="Small" 
+                               x:Name="txtApellidos"/>
                     </StackLayout>
                 </Frame>
                 <Frame HasShadow="False"
                        CornerRadius="15"
                        BackgroundColor="#242933">
                     <StackLayout>
-                        <Label Text="Nombres"
+                        <Label Text="Email"
                                TextColor="White" />
                         <Entry Keyboard="Email"
                                Placeholder="correo"
                                PlaceholderColor="Gray"
                                TextColor="white"
-                               FontSize="Small" />
+                               FontSize="Small"
+                               x:Name="txtEmail"/>
                     </StackLayout>
                 </Frame>
                 <Frame HasShadow="False"
                        CornerRadius="15"
                        BackgroundColor="#242933">
                     <StackLayout>
-                    <Label Text="Nombres"
+                    <Label Text="Telefono"
                            TextColor="White" />
                     <Entry Keyboard="Telephone"
                            Placeholder="telefono"
                            PlaceholderColor="Gray"
                            TextColor="white"
-                               FontSize="Small" />
+                           FontSize="Small"
+                           x:Name="txtTelefono"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout>
+                        <Label Text="Direccion"
+                               TextColor="White" />
+                        <Editor FontSize="Small"
+                                TextColor="White"
+                                PlaceholderColor="Gray"
+                                Placeholder="Dirección"
+                                Keyboard="Plain" VerticalOptions="Center"
+                                x:Name="txtDireccion"/>
                     </StackLayout>
                 </Frame>
                 <Button Text="Save"
@@ -96,7 +113,8 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         TextColor="White"
-                        x:Name="btnSave" />
+                        x:Name="btnSave"
+                        Clicked="btnSave_Clicked"/>
             </StackLayout>
         </Grid>
     </ScrollView>

@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vistas="clr-namespace:OrdenesTrabajo.Vistas"
-             x:DataType="vistas:MenuTab"
-             x:Class="OrdenesTrabajo.Vistas.Ordenes">
+             x:Class="OrdenesTrabajo.Vistas.Ordenes"
+             Title="Nueva Orden Trabajo">
     <ScrollView>
         <Grid BackgroundColor="#181920">
             <StackLayout Spacing="10"
@@ -18,13 +17,8 @@
                                 Title="Seleccione cliente"
                                 FontSize="Small"
                                 TextColor="white"
-                                TitleColor="Gray">
-                            <Picker.Items>
-                                <x:String>Cliente 1</x:String>
-                                <x:String>Cliente 2</x:String>
-                                <x:String>Cliente 3</x:String>
-                                <x:String>Cliente 4</x:String>
-                            </Picker.Items>
+                                TitleColor="Gray"
+                                ItemDisplayBinding="{Binding document}">
                         </Picker>
                     </StackLayout>
                     
@@ -36,17 +30,12 @@
                     <StackLayout>
                         <Label Text="Equipo"
                                TextColor="White" />
-                        <Picker x:Name="picker"
+                        <Picker x:Name="pickerTipo"
                                 Title="Seleccione equipo"
                                 FontSize="Small"
                                 TextColor="White"
-                                TitleColor="Gray">
-                            <Picker.Items>
-                                <x:String>Laptop</x:String>
-                                <x:String>CPU</x:String>
-                                <x:String>Monitor</x:String>
-                                <x:String>Impresora</x:String>
-                            </Picker.Items>
+                                TitleColor="Gray"
+                                ItemDisplayBinding="{Binding name}">
                         </Picker>
                     </StackLayout>
                     
@@ -63,7 +52,8 @@
                                PlaceholderColor="Gray"
                                TextColor="White"
                                FontSize="Small"
-                               ClearButtonVisibility="WhileEditing" />
+                               ClearButtonVisibility="WhileEditing" 
+                               x:Name="txtSerial"/>
                     </StackLayout>
                 </Frame>
                 <Frame HasShadow="False"
@@ -76,7 +66,8 @@
                                Placeholder="marca del equipo"
                                PlaceholderColor="Gray"
                                TextColor="White"
-                               FontSize="Small" />
+                               FontSize="Small"
+                               x:Name="txtMarca"/>
                     </StackLayout>
 
                 </Frame>
@@ -84,13 +75,14 @@
                        CornerRadius="15"
                        BackgroundColor="#242933">
                     <StackLayout>
-                        <Label Text="Marca"
+                        <Label Text="Modelo"
                                TextColor="White" />
                         <Entry Keyboard="Default"
                                Placeholder="modelo"
                                PlaceholderColor="Gray"
                                TextColor="White"
-                               FontSize="Small" />
+                               FontSize="Small" 
+                               x:Name="txtModelo"/>
                     </StackLayout>
               
                 </Frame>
@@ -104,7 +96,8 @@
                                 TextColor="White"
                                 PlaceholderColor="Gray"
                                 Placeholder="Descripción"
-                                Keyboard="Plain" VerticalOptions="Center"/>
+                                Keyboard="Plain" VerticalOptions="Center"
+                                x:Name="txtDescripcion"/>
 
                     </StackLayout>
 
@@ -112,18 +105,28 @@
                 <Frame VerticalOptions="Center"
                        CornerRadius="15"
                        HasShadow="False">
-                    <Grid RowDefinitions="100,50" ColumnDefinitions="*,*,*">
-  
-                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
-                               Grid.Column="0" />
-                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
-                               Grid.Column="1" />
-                        <Image Source="https://static6.depositphotos.com/1056393/628/i/600/depositphotos_6282149-stock-photo-pc-service.jpg"
-                               Grid.Column="2" />
-                        <Image Source="camaraFotografica.png"
-                               Grid.Row="1"
-                               Grid.ColumnSpan="3" />
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding PhotoPath}"/>
+
+                        <ImageButton Source="camaraFotografica.png" Grid.Row="1"
+                                     BackgroundColor="Transparent"
+                                     WidthRequest="50"
+                                     HeightRequest="50"
+                                     FlexLayout.AlignSelf="Center"
+                                     FlexLayout.Grow="1"
+                                     Aspect="AspectFit"
+                                     Command="{Binding CapturarComando}">
+                        </ImageButton>
+
+
                     </Grid>
+
+   
                 </Frame>
                 <Button Text="Save"
                         TextTransform="None"
@@ -132,7 +135,9 @@
                         FontSize="Large"
                         FontAttributes="Bold"
                         TextColor="White"
-                        x:Name="btnSave" />
+                        x:Name="btnSave" 
+                        Clicked="btnSave_Clicked"
+                        />
             </StackLayout>
         </Grid>
     </ScrollView>

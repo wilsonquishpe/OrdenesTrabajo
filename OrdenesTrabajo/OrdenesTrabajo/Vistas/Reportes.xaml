@@ -1,12 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="OrdenesTrabajo.Vistas.Reportes">
+             x:Class="OrdenesTrabajo.Vistas.Reportes"
+             Title="Reporte Ordenes">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Spacing="10"
+                         Margin="20">
+            <Button Text="Cargar Ordenes"
+                        TextTransform="None"
+                        BackgroundColor="#4F61EC"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        x:Name="btnSave"
+                    Clicked="Button_Clicked"/>
+            <ListView ItemsSource="{Binding Ordenes}"
+                      SelectionMode="None"
+                      VerticalOptions="FillAndExpand"
+                      RowHeight="150"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame HasShadow="False"
+                                       CornerRadius="15"
+                                       BackgroundColor="#242933">
+
+                                    <Grid ColumnDefinitions="35,auto">
+                                        <Image Grid.Column="0" Source="certificado.png" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+
+                                        <StackLayout Grid.Column="1" Spacing="5">
+
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="Serial: " FontAttributes="Bold"/>
+                                        <Label VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding serial}"/>
+                                    </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Marca: " FontAttributes="Bold"/>
+                                            <Label VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding brand}"/>
+                                        </StackLayout>
+
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Modelo: " FontAttributes="Bold"/>
+                                            <Label VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding model}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Problema: " FontAttributes="Bold"/>
+                                            <Label VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding description}"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                        </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

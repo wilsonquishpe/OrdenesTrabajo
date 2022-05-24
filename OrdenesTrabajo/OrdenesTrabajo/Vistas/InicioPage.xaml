@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdenesTrabajo.Vistas.InicioPage"
+             Title="Inicio">
+    <ContentPage.Content>
+        <StackLayout Margin="20,30,20,0">
+
+            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Frame HasShadow="True"
+                       CornerRadius="20"
+                   BackgroundColor="Gray">
+                    <StackLayout>
+                        
+                        <Label Text="Datos de mi ubicación" FontAttributes="Bold" FontSize="Large" TextColor="White" HorizontalOptions="Center"></Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Empresa: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.organization_name}"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Pais: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.country}"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Provincia: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.region}"/>
+                        </StackLayout>
+
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Ciudad: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.city}"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Latitud: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.latitude}"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Longitud: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.longitude}"/>
+                        </StackLayout>
+
+
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Ip Servicio: " FontAttributes="Bold" FontSize="Medium"/>
+                            <Label VerticalOptions="Start"
+                                   VerticalTextAlignment="Center"
+                                   FontSize="Medium"
+                                   Text="{Binding Externo.ip}"/>
+                        </StackLayout>
+
+                        
+                    </StackLayout>
+                    
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Spacing="20">
+
+                <Grid ColumnDefinitions="auto" RowDefinitions="auto,auto,auto,auto" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                    <StackLayout Spacing="20">
+
+                        <Frame HasShadow="True"
+                       CornerRadius="20"
+                   BackgroundColor="LightYellow" Grid.Row="0">
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,*">
+                                    <Label Text="Ingresados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="Black"/>
+                                    <Label Text="10" FontAttributes="Bold" FontSize="Large" TextColor="Black" Grid.Column="1" HorizontalTextAlignment="End"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame HasShadow="True"
+                       CornerRadius="20"
+                   BackgroundColor="Green" Grid.Row="1">
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,*">
+                                    <Label Text="Solucionados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                    <Label Text="10" Grid.Column="1" FontAttributes="Bold" FontSize="Large" TextColor="White" HorizontalTextAlignment="End"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame HasShadow="True"
+                       CornerRadius="20"
+                   BackgroundColor="Red" Grid.Row="2">
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,*">
+                                    <Label Text="Pendientes" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                    <Label Text="10" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame HasShadow="True"
+                       CornerRadius="20"
+                   BackgroundColor="CadetBlue" Grid.Row="3">
+                            <StackLayout>
+                                <Grid ColumnDefinitions="*,*">
+                                    <Label Text="Enviados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                    <Label Text="10" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+
+        
+        
+
+
+    </ContentPage.Content>
+</ContentPage>
