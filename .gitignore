@@ -1,5 +1,6 @@
 /node_modules
 /node_modules copy
-
+/.vs
+.vs
 BORRAR.js
 .vs/*
