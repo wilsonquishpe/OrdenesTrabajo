@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Acr.UserDialogs;
+using Newtonsoft.Json;
 using OrdenesTrabajo.Data;
 using OrdenesTrabajo.Models;
 using OrdenesTrabajo.ViewModels;
@@ -51,33 +52,41 @@ namespace OrdenesTrabajo.Vistas
 
         private async void btnSave_Clicked(object sender, EventArgs e)
         {
-         
+            try {
 
-            Cliente cl = new Cliente();
-            Catalogo ca = new Catalogo();
-            cl = (Cliente)pickerCliente.SelectedItem;
-            ca = (Catalogo)pickerTipo.SelectedItem;
-            Debug.WriteLine("save " + cl.id);
-            Debug.WriteLine("save " + ca.id);
-            OrdenTrabajo ordenTrabajo = new OrdenTrabajo
-            {
-                serial = txtSerial.Text,
-                brand = txtMarca.Text,
-                model = txtModelo.Text,
-                description = txtDescripcion.Text,
-                idClient = cl.id,
-                type = ca.value.ToString(),
-                idUser = null,
-                online = true
-            };
+                Cliente cl = new Cliente();
+                Catalogo ca = new Catalogo();
+                cl = (Cliente)pickerCliente.SelectedItem;
+                ca = (Catalogo)pickerTipo.SelectedItem;
+                Debug.WriteLine("save " + cl.id);
+                Debug.WriteLine("save " + ca.id);
+                OrdenTrabajo ordenTrabajo = new OrdenTrabajo
+                {
+                    serial = txtSerial.Text,
+                    brand = txtMarca.Text,
+                    model = txtModelo.Text,
+                    description = txtDescripcion.Text,
+                    idClient = cl.id,
+                    type = ca.value.ToString(),
+                    idUser = null,
+                    online = true
+                };
 
-            ServiceRest service = new ServiceRest();
-            Resultado resul = new Resultado();
-            resul = await service.SaveOrdenTrabajo(ordenTrabajo);
-            Debug.WriteLine("resul: " + resul);
+                ServiceRest service = new ServiceRest();
+                Resultado resul = new Resultado();
+                resul = await service.SaveOrdenTrabajo(ordenTrabajo);
+                Debug.WriteLine("resul: " + resul);
+                UserDialogs.Instance.HideLoading();
 
-            FotoViewModel fvm = new FotoViewModel();
-            fvm.AddPhotoAsync();
+            }
+            catch(Exception ex) { 
+
+               Debug.WriteLine(ex.ToString());
+
+            }
+
+            
+
 
 
         }

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Acr.UserDialogs;
+using Newtonsoft.Json;
 using OrdenesTrabajo.Data;
 using OrdenesTrabajo.Models;
 using System;
@@ -22,10 +23,12 @@ namespace OrdenesTrabajo.ViewModels
 
         public async void LoadData()
         {
+            UserDialogs.Instance.ShowLoading("Cargando Datos...", MaskType.Black);
             _ = new Resultado();
             Resultado resul = await ServiceRest.GetListOrdenes();
             List<OrdenTrabajo> lista = JsonConvert.DeserializeObject<List<OrdenTrabajo>>(resul.body.ToString());
             Ordenes = new ObservableCollection<OrdenTrabajo>(lista);
+            UserDialogs.Instance.HideLoading();
         }
     }
 }

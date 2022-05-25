@@ -12,7 +12,6 @@ namespace OrdenesTrabajo.Data
 
         public static string urlIp = "https://get.geojs.io/v1/ip/geo.js";
 
-
         private string BaseUrl { get; }
         private HttpClient Client { get; }
 

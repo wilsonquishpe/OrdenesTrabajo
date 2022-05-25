@@ -12,17 +12,16 @@ using Xamarin.Essentials;
 
 namespace OrdenesTrabajo.Data
 {
-  
-
     internal class ServiceRest
     {
         public static HttpClient client;
         public static int resultado = 0;
         public static Resultado res = null;
-        public static string urlUsuario = "http://192.168.1.58:4001/api/usuario/";
-        public static string urlCliente = "http://192.168.1.58:4001/api/cliente/";
-        public static string urlCatalogo = "http://192.168.1.58:4001/api/catalogo/";
-        public static string urlOrden = "http://192.168.1.58:4001/api/ordenTrabajo/";
+        public static string baseUri = "http://192.168.137.133:4001";
+        public static string urlUsuario = baseUri + "/api/usuario/";
+        public static string urlCliente = baseUri + "/api/cliente/";
+        public static string urlCatalogo = baseUri + "/api/catalogo/";
+        public static string urlOrden = baseUri + "/api/ordenTrabajo/";
         public static Uri RequestUri =  null;
 
         public async Task<Resultado> SaveCliente(Cliente cliente)
@@ -41,7 +40,6 @@ namespace OrdenesTrabajo.Data
                     Debug.WriteLine("content: " + content);
                     res = JsonConvert.DeserializeObject<Resultado>(content);
                 }
-
             }
             catch (Exception ex)
             {
@@ -161,6 +159,30 @@ namespace OrdenesTrabajo.Data
                     res = new Resultado();
                     string content = await response.Content.ReadAsStringAsync();
                     Debug.WriteLine("GetListClientes " + content);
+                    res = JsonConvert.DeserializeObject<Resultado>(content);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(@"\tERROR {0}", ex.Message);
+            }
+            return res;
+        }
+
+        public static async Task<Resultado> GetListCatalogos()
+        {
+            try
+            {
+                var request = new HttpRequestMessage();
+                request.RequestUri = new Uri(urlCatalogo + "list");
+                request.Method = HttpMethod.Get;
+                request.Headers.Add("Accept", "application/json");
+                client = new HttpClient();
+                HttpResponseMessage response = await client.SendAsync(request);
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    res = new Resultado();
+                    string content = await response.Content.ReadAsStringAsync();
                     res = JsonConvert.DeserializeObject<Resultado>(content);
                 }
             }

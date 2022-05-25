@@ -11,14 +11,16 @@
                        CornerRadius="20"
                    BackgroundColor="Gray">
                     <StackLayout>
-                        
+
                         <Label Text="Datos de mi ubicación" FontAttributes="Bold" FontSize="Large" TextColor="White" HorizontalOptions="Center"></Label>
+
+
                         <StackLayout Orientation="Horizontal">
                             <Label Text="Empresa: " FontAttributes="Bold" FontSize="Medium"/>
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.organization_name}"/>
+                                   Text="{Binding Externo.Organization_name}"/>
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
@@ -26,7 +28,7 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.country}"/>
+                                   Text="{Binding Externo.Country}"/>
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
@@ -34,7 +36,7 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.region}"/>
+                                   Text="{Binding Externo.Region}"/>
                         </StackLayout>
 
 
@@ -43,7 +45,7 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.city}"/>
+                                   Text="{Binding Externo.City}"/>
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
@@ -51,7 +53,7 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.latitude}"/>
+                                   Text="{Binding Externo.Latitude}"/>
                         </StackLayout>
 
                         <StackLayout Orientation="Horizontal">
@@ -59,7 +61,7 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.longitude}"/>
+                                   Text="{Binding Externo.Longitude}"/>
                         </StackLayout>
 
 
@@ -68,10 +70,9 @@
                             <Label VerticalOptions="Start"
                                    VerticalTextAlignment="Center"
                                    FontSize="Medium"
-                                   Text="{Binding Externo.ip}"/>
+                                   Text="{Binding Externo.Ip}"/>
                         </StackLayout>
 
-                        
                     </StackLayout>
                     
                 </Frame>
@@ -89,7 +90,7 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="*,*">
                                     <Label Text="Ingresados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="Black"/>
-                                    <Label Text="10" FontAttributes="Bold" FontSize="Large" TextColor="Black" Grid.Column="1" HorizontalTextAlignment="End"/>
+                                    <Label Text="{Binding Ingresados}" FontAttributes="Bold" FontSize="Large" TextColor="Black" Grid.Column="1" HorizontalTextAlignment="End"/>
                                 </Grid>
                             </StackLayout>
                         </Frame>
@@ -100,7 +101,7 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="*,*">
                                     <Label Text="Solucionados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
-                                    <Label Text="10" Grid.Column="1" FontAttributes="Bold" FontSize="Large" TextColor="White" HorizontalTextAlignment="End"/>
+                                    <Label Text="{Binding Pendientes}" Grid.Column="1" FontAttributes="Bold" FontSize="Large" TextColor="White" HorizontalTextAlignment="End"/>
                                 </Grid>
                             </StackLayout>
                         </Frame>
@@ -111,7 +112,7 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="*,*">
                                     <Label Text="Pendientes" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
-                                    <Label Text="10" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                    <Label Text="{Binding Enviados}" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
                                 </Grid>
                             </StackLayout>
                         </Frame>
@@ -122,7 +123,7 @@
                             <StackLayout>
                                 <Grid ColumnDefinitions="*,*">
                                     <Label Text="Enviados" Grid.Column="0" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
-                                    <Label Text="10" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
+                                    <Label Text="{Binding Pendientes}" Grid.Column="1" HorizontalTextAlignment="End" FontAttributes="Bold" FontSize="Large" TextColor="White"/>
                                 </Grid>
                             </StackLayout>
                         </Frame>

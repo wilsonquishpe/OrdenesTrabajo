@@ -30,6 +30,7 @@ namespace OrdenesTrabajo.Vistas
             menuItems.Add(new MenuItemsModel { page = typeof(Ordenes), Titulo = "Ingresar Orden", Icono = "documento.png" });
             menuItems.Add(new MenuItemsModel { page = typeof(ListClientes), Titulo = "Clientes", Icono = "seguro.png" });
             menuItems.Add(new MenuItemsModel { page = typeof(Reportes), Titulo = "Ordenes", Icono = "certificado.png" });
+            menuItems.Add(new MenuItemsModel { page = typeof(CatalogoPage), Titulo = "Catalogos", Icono = "documento.png" });
             menuItems.Add(new MenuItemsModel { page = null, Titulo = "Cerrar Sesión", Icono = "avion.png" });
 
             listPageMain.ItemsSource = menuItems;

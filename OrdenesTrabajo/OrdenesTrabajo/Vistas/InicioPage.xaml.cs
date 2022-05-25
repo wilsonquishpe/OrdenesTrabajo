@@ -15,13 +15,17 @@ namespace OrdenesTrabajo.Vistas
             InitializeComponent();
             _viewModel = new InicioViewModel();
             BindingContext = _viewModel;
+
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
             _viewModel.LoadDataAsync();
-
+            _viewModel.LoadCantIngAsync();
+            _viewModel.LoadCantPenAsync();
+            _viewModel.LoadCantSolAsync();
+            _viewModel.LoadCantEnvAsync(); 
         }
     }
 }

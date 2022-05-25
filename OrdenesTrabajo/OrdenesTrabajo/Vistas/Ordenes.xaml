@@ -105,13 +105,9 @@
                 <Frame VerticalOptions="Center"
                        CornerRadius="15"
                        HasShadow="False">
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="150"/>
-                            <RowDefinition Height="auto"/>
-                        </Grid.RowDefinitions>
+                    <Grid RowDefinitions="150,auto">
 
-                        <Image Source="{Binding PhotoPath}"/>
+                        <Image Source="{Binding PhotoPath}" Grid.Row="0"/>
 
                         <ImageButton Source="camaraFotografica.png" Grid.Row="1"
                                      BackgroundColor="Transparent"

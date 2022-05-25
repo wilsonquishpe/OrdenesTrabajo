@@ -39,3 +39,4 @@ C:\Users\Dell\source\repos\OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo\obj\Debu
 C:\Users\Dell\source\repos\OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo\obj\Debug\netstandard2.0\Vistas\MenuPage.xaml.g.cs
 C:\Users\Dell\source\repos\OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo\obj\Debug\netstandard2.0\Vistas\ListClientes.xaml.g.cs
 C:\Users\Dell\source\repos\OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo\obj\Debug\netstandard2.0\Vistas\InicioPage.xaml.g.cs
+C:\Users\Dell\source\repos\OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo\obj\Debug\netstandard2.0\Vistas\CatalogoPage.xaml.g.cs

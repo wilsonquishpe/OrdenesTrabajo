@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Acr.UserDialogs;
+using Newtonsoft.Json;
 using OrdenesTrabajo.Data;
 using OrdenesTrabajo.Models;
 using OrdenesTrabajo.ViewModels;
@@ -30,7 +31,9 @@ namespace OrdenesTrabajo.Vistas
 
         private void Button_Clicked(object sender, EventArgs e)
         {
+            
             _viewModel.LoadData();
+           
 
         }
     }
