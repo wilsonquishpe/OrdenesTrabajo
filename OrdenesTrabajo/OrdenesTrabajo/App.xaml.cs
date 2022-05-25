@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using OrdenesTrabajo.Vistas;
+using Xamarin.Essentials;
 
 namespace OrdenesTrabajo
 {
@@ -11,7 +12,19 @@ namespace OrdenesTrabajo
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            if (Preferences.Get("isLogged",false))
+            {
+                MainPage = new MenuPage();
+            }
+            else
+            {
+                MainPage = new NavigationPage(new Login());
+            }
+     
+                
+            
+
+            
         }
 
         protected override void OnStart()

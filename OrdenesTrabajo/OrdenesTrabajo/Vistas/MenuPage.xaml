@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdenesTrabajo.Vistas.MenuPage"
+             Title="Menú">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menú"
+                     BackgroundColor="#242933"
+                     Padding="5,5,5,5" >
+            <StackLayout BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+                <Frame HasShadow="False"
+                       CornerRadius="15"
+                       BackgroundColor="#242933">
+                    <StackLayout Spacing="10"
+                         Margin="20">
+                        <Label TextColor="White" Text="Ordenes de Trabajo" HorizontalOptions="CenterAndExpand" 
+                               FontSize="Large"
+                               FontAttributes="Bold"></Label>
+                        <Image Source="laptop.png" HeightRequest="100"/>
+
+                    </StackLayout>
+                </Frame>
+                <Frame HasShadow="False" HeightRequest="12"
+                       CornerRadius="18"
+                       BackgroundColor="#393E47"  > 
+                    <StackLayout Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label TextColor="White" Text="MENÚ" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                               FontSize="Large"
+                               FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Margin="10,20,5,5" Spacing="0"  Orientation="Vertical" VerticalOptions="Fill" HorizontalOptions="StartAndExpand">
+                    <ListView x:Name="listPageMain" ItemSelected="OnListItemSelected" SeparatorVisibility="None"
+                              VerticalOptions="CenterAndExpand"
+                              RowHeight="60"
+                              HeightRequest="500">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell >
+                                    <StackLayout Spacing="20" Orientation="Vertical">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Grid ColumnDefinitions="30,auto" ColumnSpacing="20" VerticalOptions="Center">
+                                                    <Image Source="{Binding Icono}"  Grid.Column="0" VerticalOptions="Center"/>
+                                                <Label TextColor="White" 
+                                                       Text="{Binding Titulo}" FontSize="Large" FontAttributes="Bold" Grid.Column="1" VerticalOptions="Center"/>
+                                                </Grid>
+                                            </StackLayout>
+                                        </StackLayout>
+                               
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+</FlyoutPage>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrdenesTrabajo.Vistas.ListClientes"
+             Title="Lista de Clientes">
+    <ScrollView>
+        <Grid BackgroundColor="#181920">
+            <StackLayout Spacing="10"
+                         Margin="20">
+
+
+            <Button Text="Crear Cliente"
+                        TextTransform="None"
+                        BackgroundColor="#4F61EC"
+                        CornerRadius="20"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                    Command="{Binding AddCommand}"/>
+
+            <ListView ItemsSource="{Binding Clientes}"
+                      SelectionMode="None"
+                      VerticalOptions="FillAndExpand"
+                      RowHeight="200"
+                      SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                
+                                <Frame HasShadow="False"
+                                       CornerRadius="15"
+                                       BackgroundColor="#242933">
+
+                                    <Grid ColumnDefinitions="35,auto">
+                                        
+                                        <Image Grid.Column="0" Source="seguro.png" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+
+                                        <StackLayout Grid.Column="1" Spacing="5">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label TextColor="White" Text="Documento: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding document}"/>
+                                            </StackLayout>
+                                        
+
+                                        <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Nombres: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding firstName}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Apellidos: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding lastName}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Correo: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding email}"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Teléfono: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding phoneNumber}"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Direcció: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding address}"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>

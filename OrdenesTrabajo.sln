@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32413.511
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdenesTrabajo.Android", "OrdenesTrabajo\OrdenesTrabajo.Android\OrdenesTrabajo.Android.csproj", "{9AB08ABB-B304-4239-8CB6-319AB3B09C03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdenesTrabajo.iOS", "OrdenesTrabajo\OrdenesTrabajo.iOS\OrdenesTrabajo.iOS.csproj", "{19332804-0ABE-43E8-B392-272E18F2AB8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdenesTrabajo", "OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo.csproj", "{3F6EEB8F-6A94-4E10-955E-6F68366A8E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrdenesTrabajo", "OrdenesTrabajo\OrdenesTrabajo\OrdenesTrabajo.csproj", "{3F6EEB8F-6A94-4E10-955E-6F68366A8E1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
