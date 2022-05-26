@@ -20,7 +20,7 @@
                 <ListView ItemsSource="{Binding Ordenes}"
                       SelectionMode="None"
                       VerticalOptions="FillAndExpand"
-                      RowHeight="200"
+                      RowHeight="220"
                       SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -92,6 +92,16 @@
                                                             VerticalTextAlignment="Center"
                                                             FontSize="15"
                                                             Text="{Binding nameUser}"/>
+                                                </StackLayout>
+
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Estado: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding status}"/>
                                                 </StackLayout>
 
                                             </StackLayout>
