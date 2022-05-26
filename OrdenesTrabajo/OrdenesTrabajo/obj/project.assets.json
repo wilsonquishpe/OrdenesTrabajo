@@ -645,25 +645,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dguilcapi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
       "projectName": "OrdenesTrabajo",
-      "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
-      "packagesPath": "C:\\Users\\dguilcapi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dguilcapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -725,7 +720,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

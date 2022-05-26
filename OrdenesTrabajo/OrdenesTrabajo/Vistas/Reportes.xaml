@@ -20,7 +20,7 @@
                 <ListView ItemsSource="{Binding Ordenes}"
                       SelectionMode="None"
                       VerticalOptions="FillAndExpand"
-                      RowHeight="150"
+                      RowHeight="200"
                       SeparatorVisibility="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -74,7 +74,27 @@
                                                             Text="{Binding description}"/>
                                         </StackLayout>
 
-                                    </StackLayout>
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Cliente: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding clientFist}"/>
+                                                </StackLayout>
+
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label TextColor="White"
+                                                           Text="Tecnico: " FontAttributes="Bold"/>
+                                                    <Label TextColor="White"
+                                                           VerticalOptions="Start"
+                                                            VerticalTextAlignment="Center"
+                                                            FontSize="15"
+                                                            Text="{Binding nameUser}"/>
+                                                </StackLayout>
+
+                                            </StackLayout>
                                         </Grid>
                                 </Frame>
                             </StackLayout>

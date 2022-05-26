@@ -1305,26 +1305,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dguilcapi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Dell\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
       "projectName": "OrdenesTrabajo.iOS",
-      "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
-      "packagesPath": "C:\\Users\\dguilcapi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\OrdenesTrabajo.iOS.csproj",
+      "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\dguilcapi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1336,8 +1331,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
-              "projectPath": "C:\\Users\\dguilcapi\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj"
+            "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj": {
+              "projectPath": "C:\\Users\\Dell\\source\\repos\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo\\OrdenesTrabajo.csproj"
             }
           }
         }

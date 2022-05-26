@@ -17,5 +17,12 @@ namespace OrdenesTrabajo.Models
         public string status { get; set; }
         public bool online { get; set; }
         public string id { get; set; }
+
+        public string clientFist { get; set; }
+
+        public string clientLast { get; set; }
+
+        public string nameUser { get; set; }
+
     }
 }
